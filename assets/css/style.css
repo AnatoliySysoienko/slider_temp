@@ -452,6 +452,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.container {
+  max-width: 992px;
+  margin: auto;
+  padding: 0 20px;
+}
+
 .slides {
   position: relative;
 
@@ -512,4 +518,57 @@ body {
 
 .slide:nth-of-type(5) {
   background: purple;
+}
+
+.slides {
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  margin-bottom: 20px;
+
+  gap: 10px;
+}
+
+.control {
+  display: block;
+
+  padding: 10px 20px;
+
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  background-color: gray;
+}
+
+.indicators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  gap: 10px;
+}
+
+.indicator {
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  border-radius: 15px;
+  background-color: lightsteelblue;
+}
+.indicator.active {
+  background-color: tomato;
 }

@@ -11,6 +11,12 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 992px;
+  padding: 0 20px;
+  margin: auto;
+}
+
 .slides {
   position: relative;
   height: 150px;
@@ -58,4 +64,40 @@ body {
 
 .slide:nth-of-type(5) {
   background: purple;
+}
+
+.slides {
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.control {
+  display: block;
+  background-color: gray;
+  padding: 10px 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.indicators {
+  display: flex;
+  gap: 10px;
+}
+
+.indicator {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: lightsteelblue;
+  cursor: pointer;
+  user-select: none;
+
+  &.active {
+    background-color: tomato;
+  }
 }
